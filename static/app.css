@@ -1,0 +1,85 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(45deg,
+            hsl(240deg 100% 20%) 0%,
+            hsl(222deg 100% 27%) 16%,
+            hsl(214deg 100% 33%) 24%,
+            hsl(207deg 100% 38%) 30%,
+            hsl(201deg 100% 42%) 35%,
+            hsl(196deg 100% 45%) 40%,
+            hsl(190deg 100% 48%) 45%,
+            hsl(185deg 100% 50%) 50%,
+            hsl(189deg 100% 50%) 55%,
+            hsl(193deg 100% 50%) 60%,
+            hsl(197deg 100% 50%) 65%,
+            hsl(201deg 100% 50%) 70%,
+            hsl(206deg 100% 50%) 76%,
+            hsl(212deg 100% 50%) 84%,
+            hsl(218deg 96% 49%) 100%);
+    background-repeat: no-repeat;
+    background-size: 400% 400%;
+    animation: animate 10s ease infinite;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+
+.list-container {
+    color: white;
+    padding-top: 0.4em;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+.error {
+
+    background-color: rgba(255, 153, 102, 0.8);
+    /* 50% opacity */
+    color: white;
+    width: 30%;
+    padding: 10px 20px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+svg {
+    transform: translate(0, 5.6px);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+p {
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    padding-right: 0.8em;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}

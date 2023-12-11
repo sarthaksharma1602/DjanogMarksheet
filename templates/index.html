@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/home.css">
+
+</head>
+
+<body>
+    <h1>Marksheet Maker</h1>
+    <div class="form-container">
+        <form action="mark-sheet/" method="post" class="my-form">
+            {% csrf_token %}
+            <label>Marks 1</label>
+            <input type="text" name="m1">
+            <label>Marks 2</label>
+            <input type="text" name="m2">
+            <label>Marks 3</label>
+            <input type="text" name="m3">
+            <label>Marks 4</label>
+            <input type="text" name="m4" class="m4class">
+            <input type="submit" class="btn">
+        </form>
+    </div>
+</body>
+
+</html>

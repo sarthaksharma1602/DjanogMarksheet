@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/app.css">
+</head>
+
+<body>
+    <h1>Here are the average marks</h1>
+    {% if err %}
+    <div class="error">
+        <svg style="color: red" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+        Your are missing a value! go back and try again....</div>
+    {% else %}
+    <div class="list-container">
+        <ul>
+            <li>Marks in all subjects are:</li>
+            <li>subject 1 : {{marks1}}</li>
+            <li>subject 2 : {{marks2}}</li>
+            <li>subject 3 : {{marks3}}</li>
+            <li>subject 4 : {{marks4}}</li>
+        </ul>
+    </div>
+    <p>Total marks you get are {{result}}</p>
+    {% endif %}
+</body>
+
+</html>
